@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Amazing Greece</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ 
+    <link rel="stylesheet" href="past.css">
+  </head>
+  <body>
+    <nav  class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#">Amazing Greece</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse row justify-content-end"
+        id="navbarNavAltMarkup"
+      >
+        <a class="nav-item nav-link" href="index.html">Geo</a>
+        <a class="nav-item nav-link" href="index.html">Cuisine</a>
+        <a class="nav-item nav-link" href="#culture">Culture</a>
+        <a class="nav-item nav-link" href="#past">Past</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="menu">
+        <input class="toggle" id="menu" type="checkbox" />
+        <label class="style" for="menu">
+          <p>Past</p>
+        </label>
+        <a class="tab" onclick="openNav()">
+          <p>I</p>
+        </a>
+        <a class="tab" onclick="openNav1()">
+          <p>II</p>
+        </a>
+        <a class="tab" onclick="openNav2()">
+          <p>III</p>
+        </a>
+        <a class="tab" onclick="openNav3()">
+          <p>IV</p>
+        </a>
+      </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="row justify-content-center">
+          <h1>Bronze Age and Civilizations</h1>
+      </div>
+      <div class="row justify-content-around">
+          
+          <div class="col-sm-4">
+            <h2>The Bronze age</h2>
+            <p>The use of bronze in tool making and weaponry was a rebirth for the civilization in Greece. The 2nd millennium BC gave birth to some great civilizations: the Minoan on Crete island, the Mycenaean on the mainland and the Cycladic (in Cyclades islands) in the islands of Centre Aegean. This period is characterized by a rapid growth of population and development of trading. The islands of Cyclades, located in the centre of the Aegea Sea, were an important trade centre between Europe and Asia. The Cycladic civilization developed rapidly in all domains: trade, politics and culture with impressive frescoes and marble figurines. Samples of the Cycladic architecture can be seen in the Museum of Cycladic Art in Athens and the regional museums on the Cyclades islands.</p>
+            <img src="pictures/bronze.png" alt="bronze">
+            
+          </div>
+          <div class="col-sm-4">
+              <h2>The Minoan Civilization</h2>
+              <p>The Minoan civilization, named after the mythical King Minos, developed in Crete around 2,600 BC and onwards. The Minoans had a flourishing economic, political, social and cultural organization. The Minoan period was characterized by important trade activities and the construction of impressive palaces such as Knossos, Malia, Zakros and Phaestos. During this period, the first writing in the Greek World, called Linear A, appeared for the first time in Crete. The Minoans also developed a strong naval power and installed many colonies in the Aegean Sea. </p>
+              <p>According to the remains found on the island of Crete and the lack of defensive walls, the Minoan civilization must have had peaceful relations with the other civilizations of the Aegean. This civilization disappeared suddenly around 1,500 BC, possibly due to the huge volcanic eruption of Santorini island. It is believed that the eruption has caused an enormous earthquake and huge tsunamis that crossed the southern Aegean and covered the Minoan towns in volcanic ashes. It is after that period, around 1,200 BC, that the rival Mycenaean civilization took control of the trade network of Crete. </p>
+              <img src="pictures/phaistos-disk.png" alt="phaistos">
+          </div>
+          <div class="col-sm-4">
+              <h2>The Mycenaean Civilization</h2>
+            <p>The Mycenaean civilization took its name from the town of Mycenae, the most powerful kingdom that actually dominated all through this era. The Mycenaean society was formed by an elite group organized around the authority of a single figure, the king, with varying degrees of power. Their citadels were fortified with the "Cyclopean walls", called this way because the Greeks believed that only Cyclopes could have lift so large stones. The Mycenaean society with its great military strength conquered Crete and took the control of the Minoan trade network.</p>
+            <p>The Mycenaeans also used a written language called Linear B, a development of the former Minoan Linear A, used only to register the goods and produce into the palaces. It was also the Mycenaeans that started the war against Troy as well as other expeditions around the Aegean. Between 1,250 and 1,150 BC, a combination of internal warfare and invasions from northern tribes destroyed most of the Mycenaean towns and the Mycenaean civilization disappeared.</p>
+            <img src="pictures/mycenae.png" alt="mycenae">
+            </div>
+    </div>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <div id="mySidenav1" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()"
+          >&times;</a
+        >
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/-pvZ-jTMTPo' frameborder='0' allowfullscreen></iframe>
+        </div>
+      </div>
+      <script>
+          function openNav1() {
+            document.getElementById("mySidenav1").style.width = "100%";
+          }
+    
+          function closeNav1() {
+            document.getElementById("mySidenav1").style.width = "0";
+          }
+      </script>
+      <div id="mySidenav2" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()"
+          >&times;</a
+        >
+        <div id="roman-text" class="row justify-content-center">
+            <p>Greece in the Roman era describes the period of Greek history when Ancient Greece was dominated by the Roman republic (509 – 27 BC), the Roman Empire (27 BC – AD 395), and the Byzantine Empire (AD 395 – 1453). The Roman era of Greek history began with the Corinthian defeat in the Battle of Corinth in 146 BC. However, before the Achaean War, the Roman Republic had been steadily gaining control of mainland Greece by defeating the Kingdom of Macedon in a series of conflicts known as the Macedonian Wars. The Fourth Macedonian War ended at the Battle of Pydna in 148 BC and defeat of the Macedonian royal pretender Andriscus. The definitive Roman occupation of the Greek world was established after the Battle of Actium (31 BC), in which Augustus defeated Cleopatra VII, the Greek Ptolemaic queen of Egypt, and the Roman general Mark Antony, and afterwards conquered Alexandria (32 BC), the last great city of Hellenistic Greece.[1] The Roman era of Greek history continued with Emperor Constantine the Great's adoption of Byzantium as Nova Roma, the capital city of the Roman Empire; in AD 330, the city was renamed Constantinople; afterwards, the Byzantine Empire was a generally Greek-speaking polity.</p>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+        
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pictures/maproman.png" alt="Los Angeles">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/odeon.jpg" alt="Chicago">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/roman-agora.jpg" alt="New York">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/romanwdeio.png" alt="New York">
+            </div>
+            <div class="carousel-item">
+              <img src="pictures/herodatticus.jpg" alt="New York">
+            </div>
+          </div>
+
+           <!-- Indicators -->
+           <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+          </ul>
+        
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        
+        </div>
+      </div>
+        <script>
+            function openNav2() {
+              document.getElementById("mySidenav2").style.width = "100%";
+            }
+      
+            function closeNav2() {
+              document.getElementById("mySidenav2").style.width = "0";
+            }
+        </script>
+    <div id="mySidenav3" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()"
+          >&times;</a
+        >
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/zkTZyk_CmyM' frameborder='0' allowfullscreen></iframe></div>
+      </div>
+      <script>
+          function openNav3() {
+            document.getElementById("mySidenav3").style.width = "100%";
+          }
+    
+          function closeNav3() {
+            document.getElementById("mySidenav3").style.width = "0";
+          }
+      </script>
+      
+
+  </body>
+</html>

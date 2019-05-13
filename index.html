@@ -34,7 +34,10 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav
+      class="navbar navbar-expand-lg 
+    fixed-top"
+    >
       <a class="navbar-brand" href="#">Amazing Greece</a>
       <button
         class="navbar-toggler"
@@ -55,13 +58,13 @@
         <a class="nav-item nav-link" href="#geo">Geo</a>
         <a class="nav-item nav-link" href="#cuisine">Cuisine</a>
         <a class="nav-item nav-link" href="#culture">Culture</a>
-        <a class="nav-item nav-link" href="#">Past</a>
+        <a class="nav-item nav-link" href="#past">Past</a>
       </div>
     </nav>
     <div class="map">
       <img src="pictures/map.png" alt="map" />
     </div>
-    <div id="geo" class="geo">
+    <div class="geo">
       <p>
         Greece is a country in Southern Europe,bordered to the north by Albania,
         North Macedonia and Bulgaria; to the east by Turkey, and is surrounded
@@ -75,7 +78,7 @@
         Euboea, Lesvos, Rhodes, Chios, Kefalonia, and Corfu.
       </p>
     </div>
-    <div class="container">
+    <div id="geo" class="container">
       <div class="row">
         <div class="col-lg">
           <img src="pictures/thrace_top.jpg" alt="thrace" />
@@ -95,101 +98,133 @@
           </p>
         </div>
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-1" />
           <img src="pictures/mak.jpg" alt="macedonia" />
 
           <h5>Macedonia</h5>
-          <p>
-            Macedonia is the largest and second-most-populous Greek region, with
-            a population of 2.38 million in 2017. The region is highly
-            mountainous, with most major urban centres such as Thessaloniki and
-            Kavala being concentrated on its southern coastline. Macedonia
-            incorporates most of the territories of ancient Macedon, a kingdom
-            ruled by the Argeads and whose most celebrated members were
-            Alexander the Great and his father Philip II. The name Macedonia was
-            later applied to a number of widely-differing administrative areas
-            in the Roman and Byzantine empires, resulting in modern geographical
-            Macedonia.The region remains an important economic centre for
-            Greece. Macedonia accounts for the majority of Greece's agricultural
-            production and is also a major contributor to the country's
-            industrial and tourism sectors. Central Macedonia is Greece's
-            fourth-most-popular tourist region and the most popular region that
-            is not an island.[12] It is home to four UNESCO World Heritage
-            sites, including Aigai, one of the ancient Macedonian capital
-            cities. Pella, which replaced Aigai as the capital of Macedon in the
-            fourth century BC, is also located in Greek Macedonia.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              Macedonia is the largest and second-most-populous Greek region,
+              with a population of 2.38 million in 2017. The region is highly
+              mountainous, with most major urban centres such as Thessaloniki
+              and Kavala being concentrated on its southern coastline. Macedonia
+              incorporates most of the territories of ancient Macedon, a kingdom
+              ruled by the Argeads and whose most celebrated members were
+              Alexander the Great and his father Philip II. The name Macedonia
+              was later applied to a number of widely-differing administrative
+              areas in the Roman and Byzantine empires, resulting in modern
+              geographical Macedonia.The region remains an important economic
+              centre for Greece.
+            </li>
+            <li class="read-more-target">
+              Macedonia accounts for the majority of Greece's agricultural
+              production and is also a major contributor to the country's
+              industrial and tourism sectors. Central Macedonia is Greece's
+              fourth-most-popular tourist region and the most popular region
+              that is not an island. It is home to four UNESCO World Heritage
+              sites, including Aigai, one of the ancient Macedonian capital
+              cities. Pella, which replaced Aigai as the capital of Macedon in
+              the fourth century BC, is also located in Greek Macedonia.
+            </li>
+          </ul>
+          <label for="post-1" class="read-more-trigger"></label>
         </div>
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-2" />
+
           <img src="pictures/meteora.JPG" alt="epirus" />
           <h5>Epirus</h5>
-          <p>
-            Epirus, is a traditional geographic and modern administrative region
-            in northwestern Greece. It borders the regions of West Macedonia and
-            Thessaly to the east, West Greece to the south, the Ionian Sea and
-            Ionian Islands to the west and Albania to the north. It is part of
-            the wider historical region of Epirus, which overlaps modern Albania
-            and Greece but lies mostly within Greek territory. Epirus, like the
-            region as a whole, is rugged and mountainous. It comprises the land
-            of the ancient Molossians and Thesprotians. It is largely made up of
-            mountainous ridges, part of the Dinaric Alps. The region's highest
-            spot is on Mount Smolikas, at an altitude of 2.637 metres above sea
-            level. In the east, the Pindus Mountains that form the spine of
-            mainland Greece separate Epirus from Macedonia and Thessaly. Most of
-            Epirus lies on the windward side of the Pindus. The winds from the
-            Ionian Sea offer the region more rainfall than any other part of
-            Greece. The Vikos-Aoos and Pindus National Parks are situated in the
-            Ioannina Prefecture of the region. Both areas have imposing
-            landscapes of dazzling beauty as well as a wide range of fauna and
-            flora. The climate of Epirus is mainly alpine. The vegetation is
-            made up mainly of coniferous species. The animal life is especially
-            rich in this area and includes, among other species, bears, wolves,
-            foxes, deer and lynxes.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              Epirus, is a traditional geographic and modern administrative
+              region in northwestern Greece. It borders the regions of West
+              Macedonia and Thessaly to the east, West Greece to the south, the
+              Ionian Sea and Ionian Islands to the west and Albania to the
+              north. It is part of the wider historical region of Epirus, which
+              overlaps modern Albania and Greece but lies mostly within Greek
+              territory. Epirus, like the region as a whole, is rugged and
+              mountainous. It comprises the land of the ancient Molossians and
+              Thesprotians. It is largely made up of mountainous ridges, part of
+              the Dinaric Alps. The region's highest spot is on Mount Smolikas,
+              at an altitude of 2.637 metres above sea level.
+            </li>
+            <li class="read-more-target">
+              In the east, the Pindus Mountains that form the spine of mainland
+              Greece separate Epirus from Macedonia and Thessaly. Most of Epirus
+              lies on the windward side of the Pindus. The winds from the Ionian
+              Sea offer the region more rainfall than any other part of Greece.
+              The Vikos-Aoos and Pindus National Parks are situated in the
+              Ioannina Prefecture of the region. Both areas have imposing
+              landscapes of dazzling beauty as well as a wide range of fauna and
+              flora. The climate of Epirus is mainly alpine. The vegetation is
+              made up mainly of coniferous species. The animal life is
+              especially rich in this area and includes, among other species,
+              bears, wolves, foxes, deer and lynxes.
+            </li>
+          </ul>
+          <label for="post-2" class="read-more-trigger"></label>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-3" />
+
           <img src="pictures/thes.jpg" alt="thes" />
           <h5>Thessaly</h5>
-          <p>
-            Thessaly lies in northern Greece and borders the regions of
-            Macedonia on the north, Epirus on the west, Central Greece on the
-            south and the Aegean Sea on the east. Thessaly is a traditional
-            geographic and modern administrative region of Greece, comprising
-            most of the ancient region of the same name. Before the Greek Dark
-            Ages, Thessaly was known as Aeolia , and appears thus in Homer's
-            Odyssey. Thessaly became part of the modern Greek state in 1881,
-            after four and a half centuries of Ottoman rule. The capital of the
-            region is Larissa. In Homer's epic, the Odyssey, the hero Odysseus
-            visited the kingdom of Aeolus, which was the old name for Thessaly.
-            The Plain of Thessaly, which lies between Mount Oeta/Othrys and
-            Mount Olympus, was the site of the battle between the Titans and the
-            Olympians. According to legend, Jason and the Argonauts launched
-            their search for the Golden Fleece from the Magnesia Peninsula.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              Thessaly lies in northern Greece and borders the regions of
+              Macedonia on the north, Epirus on the west, Central Greece on the
+              south and the Aegean Sea on the east. Thessaly is a traditional
+              geographic and modern administrative region of Greece, comprising
+              most of the ancient region of the same name. Before the Greek Dark
+              Ages, Thessaly was known as Aeolia , and appears thus in Homer's
+              Odyssey. Thessaly became part of the modern Greek state in 1881,
+              after four and a half centuries of Ottoman rule. The capital of
+              the region is Larissa. In Homer's epic, the Odyssey, the hero
+              Odysseus visited the kingdom of Aeolus, which was the old name for
+              Thessaly. The Plain of Thessaly, which lies between Mount
+              Oeta/Othrys and
+            </li>
+            <li class="read-more-target">
+              Mount Olympus, was the site of the battle between the Titans and
+              the Olympians. According to legend, Jason and the Argonauts
+              launched their search for the Golden Fleece from the Magnesia
+              Peninsula.
+            </li>
+          </ul>
+          <label for="post-3" class="read-more-trigger"></label>
         </div>
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-4" />
+
           <img src="pictures/sporades.jpg" alt="sporades" />
           <h5>Sporades</h5>
-          <p>
-            The (Northern) Sporades are an archipelago along the east coast of
-            Greece, northeast of the island of Euboea, in the Aegean Sea. They
-            consist of 24 islands, four of which are permanently inhabited:
-            Alonnisos, Skiathos, Skopelos and Skyros. They may also be referred
-            to as the Thessalian Sporades. "Sporades" means "those scattered"
-            (compare with "sporadic"). From Classical Antiquity the name has
-            referred to the Aegean island groups outside the central archipelago
-            of the Cyclades. Thracian Sporades: Thasos, Samothrace, Imbros,
-            Lemnos and Agios Efstratios Western Sporades: Salamis, Aigina,
-            Poros, Hydra, Spetses, and the other islands of the Saronic Gulf and
-            the Myrtoan Sea. Eastern Sporades, i.e. the islands of the eastern
-            and northeastern Aegean, near the coast of Asia Minor : Samos,
-            Ikaria, Lesbos, Chios, Tenedos, Psara, Oinousses and smaller island
-            groups Southern Sporades, i.e. the Dodecanese, to which group Samos
-            and Ikaria are sometimes appended.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              The (Northern) Sporades are an archipelago along the east coast of
+              Greece, northeast of the island of Euboea, in the Aegean Sea. They
+              consist of 24 islands, four of which are permanently inhabited:
+              Alonnisos, Skiathos, Skopelos and Skyros. They may also be
+              referred to as the Thessalian Sporades. "Sporades" means "those
+              scattered" (compare with "sporadic"). From Classical Antiquity the
+              name has referred to the Aegean island groups outside the central
+              archipelago of the Cyclades. Thracian Sporades: Thasos,
+              Samothrace, Imbros, Lemnos and Agios Efstratios Western Sporades:
+              Salamis, Aigina, Poros, Hydra, Spetses, and the other islands of
+              the Saronic Gulf and the Myrtoan Sea.
+            </li>
+            <li class="read-more-target">
+              Eastern Sporades, i.e. the islands of the eastern and northeastern
+              Aegean, near the coast of Asia Minor : Samos, Ikaria, Lesbos,
+              Chios, Tenedos, Psara, Oinousses and smaller island groups
+              Southern Sporades, i.e. the Dodecanese, to which group Samos and
+              Ikaria are sometimes appended.
+            </li>
+          </ul>
+          <label for="post-4" class="read-more-trigger"></label>
         </div>
         <div class="col-lg">
           <img src="pictures/athens.jpg" alt="central" />
@@ -214,63 +249,76 @@
     <div class="container">
       <div class="row">
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-5" />
           <img src="pictures/monem.jpg" alt="Peloponnese" />
-
           <h5>Peloponnese</h5>
-          <p>
-            The Peloponnese is a peninsula and geographic region in southern
-            Greece. It is connected to the central part of the country by the
-            Isthmus of Corinth land bridge which separates the Gulf of Corinth
-            from the Saronic Gulf. During the late Middle Ages and the Ottoman
-            era, the peninsula was known as the Morea , a name still in
-            colloquial use in its demotic form. The peninsula is divided among
-            three administrative regions: most belongs to the Peloponnese
-            region, with smaller parts belonging to the West Greece and Attica
-            regions. Since antiquity, and continuing to the present day, the
-            Peloponnese has been divided into seven major regions: Achaea
-            (north), Corinthia (northeast), Argolis (east), Arcadia (center),
-            Laconia (southeast), Messenia (southwest), and Elis (west). Each of
-            these regions is headed by a city. The largest city is Patras (pop.
-            170,000) in Achaia, followed by Kalamata (pop. 55,000) in Messenia.
-            The peninsula has been inhabited since prehistoric times. Its modern
-            name derives from ancient Greek mythology, specifically the legend
-            of the hero Pelops, who was said to have conquered the entire
-            region. The name Peloponnesos means "Island of Pelops". The
-            Mycenaean civilization, mainland Greece's (and Europe's) first major
-            civilization, dominated the Peloponnese in the Bronze Age from its
-            stronghold at Mycenae in the north-east of the peninsula. The
-            Mycenean civilization collapsed suddenly at the end of the 2nd
-            millennium BC. Archeological research has found that many of its
-            cities and palaces show signs of destruction. The subsequent period,
-            known as the Greek Dark Ages, is marked by an absence of written
-            records.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              The Peloponnese is a peninsula and geographic region in southern
+              Greece. It is connected to the central part of the country by the
+              Isthmus of Corinth land bridge which separates the Gulf of Corinth
+              from the Saronic Gulf. During the late Middle Ages and the Ottoman
+              era, the peninsula was known as the Morea , a name still in
+              colloquial use in its demotic form. The peninsula is divided among
+              three administrative regions: most belongs to the Peloponnese
+              region, with smaller parts belonging to the West Greece and Attica
+              regions. Since antiquity, and continuing to the present day, the
+              Peloponnese has been divided into seven major regions: Achaea
+              (north), Corinthia (northeast), Argolis (east), Arcadia (center),
+              Laconia (southeast), Messenia (southwest), and Elis (west). Each
+              of these regions is headed by a city. The largest city is Patras
+              (pop. 170,000) in Achaia, followed by Kalamata (pop. 55,000) in
+              Messenia. The peninsula has been inhabited since prehistoric
+              times.
+            </li>
+            <li class="read-more-target">
+              Its modern name derives from ancient Greek mythology, specifically
+              the legend of the hero Pelops, who was said to have conquered the
+              entire region. The name Peloponnesos means "Island of Pelops". The
+              Mycenaean civilization, mainland Greece's (and Europe's) first
+              major civilization, dominated the Peloponnese in the Bronze Age
+              from its stronghold at Mycenae in the north-east of the peninsula.
+              The Mycenean civilization collapsed suddenly at the end of the 2nd
+              millennium BC. Archeological research has found that many of its
+              cities and palaces show signs of destruction. The subsequent
+              period, known as the Greek Dark Ages, is marked by an absence of
+              written records.
+            </li>
+          </ul>
+          <label for="post-5" class="read-more-trigger"></label>
         </div>
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-6" />
+
           <img src="pictures/kerk.jpg" alt="Ionian Islands" />
           <h5>Ionian Islands</h5>
-          <p>
-            The Ionian Islands are a group of islands in Greece. They are
-            traditionally called the Heptanese, i.e. "the Seven Islands", but
-            the group includes many smaller islands as well as the seven
-            principal ones. As a distinct historic region they date to the
-            centuries-long Venetian rule, which preserved them from becoming
-            part of the Ottoman Empire, and created a distinct cultural identity
-            with many Italian influences. The islands were settled by Greeks at
-            an early date, possibly as early as 1200 BC, and certainly by the
-            9th century BC. The early Eretrian settlement at Kerkyra was
-            displaced by colonists from Corinth in 734 BC. The islands were
-            mostly a backwater during Ancient Greek times and played little part
-            in Greek politics. The one exception was the conflict between
-            Kerkyra and its mother-City Corinth in 434 BC, which brought
-            intervention from Athens and triggered the Peloponnesian War. Ithaca
-            was the name of the island home of Odysseus in the epic Ancient
-            Greek poem the Odyssey by Homer. Attempts have been made to identify
-            Ithaki with ancient Ithaca, but the geography of the real island
-            cannot be made to fit Homer's description. Archeological
-            investigations have revealed interesting findings in both Kefalonia
-            and Ithaca.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              The Ionian Islands are a group of islands in Greece. They are
+              traditionally called the Heptanese, i.e. "the Seven Islands", but
+              the group includes many smaller islands as well as the seven
+              principal ones. As a distinct historic region they date to the
+              centuries-long Venetian rule, which preserved them from becoming
+              part of the Ottoman Empire, and created a distinct cultural
+              identity with many Italian influences. The islands were settled by
+              Greeks at an early date, possibly as early as 1200 BC, and
+              certainly by the 9th century BC. The early Eretrian settlement at
+              Kerkyra was displaced by colonists from Corinth in 734 BC. The
+              islands were mostly a backwater during Ancient Greek times and
+              played little part in Greek politics. The one exception was the
+              conflict between Kerkyra and its mother-City Corinth in 434 BC,
+              which brought intervention from Athens and triggered the
+              Peloponnesian War. Ithaca was the name of the island home of
+              Odysseus in the epic Ancient Greek poem the Odyssey by Homer.
+            </li>
+            <li class="read-more-target">
+              Attempts have been made to identify Ithaki with ancient Ithaca,
+              but the geography of the real island cannot be made to fit Homer's
+              description. Archeological investigations have revealed
+              interesting findings in both Kefalonia and Ithaca.
+            </li>
+          </ul>
+          <label for="post-6" class="read-more-trigger"></label>
         </div>
         <div class="col-lg">
           <img src="pictures/Creta.jpg" alt="creta" />
@@ -300,38 +348,47 @@
     <div class="container">
       <div class="row">
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-7" />
+
           <img src="pictures/col.jpg" alt="Dodecanese" />
           <h5>Dodecanese</h5>
-          <p>
-            The Dodecanese , literally "twelve islands" are a group of 15 larger
-            plus 150 smaller Greek islands in the southeastern Aegean Sea, off
-            the coast of Asia Minor, of which 26 are inhabited. Τhis island
-            group generally defines the eastern limit of the Sea of Crete. They
-            belong to the wider Southern Sporades island group. The most
-            historically important and well-known island, Rhodes, has been the
-            area's dominant island since antiquity. Of the others, Kos and
-            Patmos are historically the more important; the remaining twelve are
-            Agathonisi, Astypalaia, Chalki, Kalymnos, Karpathos, Kasos, Leipsoi,
-            Leros, Nisyros, Symi, Tilos, and Kastellorizo. Other islands in the
-            chain include Alimia, Arkoi, Chalki, Farmakonisi, Gyali, Kinaros,
-            Levitha, Marathos, Nimos, Pserimos, Saria, Strongyli, Syrna and
-            Telendos. The Dodecanese have been inhabited since prehistoric
-            times. In the Neopalatial period on Crete, the islands were heavily
-            Minoanized. Following the downfall of the Minoans, the islands were
-            ruled by the Mycenaean Greeks from circa 1400 BC, until the arrival
-            of the Dorians circa 1100 BC. It is in the Dorian period that they
-            began to prosper as an independent entity, developing a thriving
-            economy and culture through the following centuries. By the early
-            Archaic period Rhodes and Kos emerged as the major islands in the
-            group, and in the 6th century BC the Dorians founded three major
-            cities on Rhodes. Together with the island of Kos and the cities of
-            Knidos and Halicarnassos on the mainland of Asia Minor, these made
-            up the Dorian Hexapolis.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              The Dodecanese , literally "twelve islands" are a group of 15
+              larger plus 150 smaller Greek islands in the southeastern Aegean
+              Sea, off the coast of Asia Minor, of which 26 are inhabited. Τhis
+              island group generally defines the eastern limit of the Sea of
+              Crete. They belong to the wider Southern Sporades island group.
+              The most historically important and well-known island, Rhodes, has
+              been the area's dominant island since antiquity. Of the others,
+              Kos and Patmos are historically the more important; the remaining
+              twelve are Agathonisi, Astypalaia, Chalki, Kalymnos, Karpathos,
+              Kasos, Leipsoi, Leros, Nisyros, Symi, Tilos, and Kastellorizo.
+              Other islands in the chain include Alimia, Arkoi, Chalki,
+              Farmakonisi, Gyali, Kinaros, Levitha, Marathos, Nimos, Pserimos,
+              Saria, Strongyli, Syrna and Telendos. The Dodecanese have been
+              inhabited since prehistoric times. In the Neopalatial period on
+              Crete, the islands were heavily Minoanized. Following the downfall
+              of the Minoans, the islands were ruled by the Mycenaean Greeks
+              from circa 1400 BC, until the arrival of the Dorians circa 1100
+              BC. It is in the Dorian period that they began to prosper as an
+              independent entity, developing a thriving economy and culture
+              through the following centuries. By the early Archaic period
+              Rhodes and Kos emerged as the major islands in the group, and in
+              the 6th century BC the Dorians founded three major cities on
+              Rhodes.
+            </li>
+            <li class="read-more-target">
+              Together with the island of Kos and the cities of Knidos and
+              Halicarnassos on the mainland of Asia Minor, these made up the
+              Dorian Hexapolis.
+            </li>
+          </ul>
+          <label for="post-7" class="read-more-trigger"></label>
         </div>
         <div class="col-lg">
           <img src="pictures/san.jpeg" alt="cyclades" />
-          <h5>Thessaly</h5>
+          <h5>Cyclades</h5>
           <p>
             The Cyclades are an island group in the Aegean Sea, southeast of
             mainland Greece and a former administrative prefecture of Greece.
@@ -357,37 +414,46 @@
           </p>
         </div>
         <div class="col-lg">
+          <input type="checkbox" class="read-more-state" id="post-8" />
+
           <img src="pictures/sam.jpg" alt="North Aegean islands" />
           <h5>North Aegean islands</h5>
-          <p>
-            The North Aegean islands are a number of disconnected islands in the
-            north Aegean Sea, also known as the Northeast Aegean islands,
-            belonging to Greece and Turkey. The islands do not form a physical
-            chain or group, but are frequently grouped together for tourist or
-            administrative purposes. To the south are the Dodecanese islands;
-            and to the west are the Cyclades and Sporades islands. Within this
-            group, the main islands in the northeastern Aegean Sea and along the
-            Turkish coast are the Greek islands of Samos, Ikaria, Chios, Lesbos,
-            Lemnos, Agios Efstratios, Psara, Fournoi Korseon, Oinousses and the
-            Turkish islands of Imbros, Tenedos and the Rabbit or Tavşan Islands.
-            The main islands in the Thracian Sea in the far north are the Greek
-            islands of Samothrace and Thasos. From the Mesolithic Age, the North
-            Aegean, as indeed the entire Aegean, ceased to be an obstacle and
-            became a bridge joining the inhabitants of the region. Shipping,
-            trade, economy, culture and social interactions developed in the
-            archipelago and surrounding areas on the basis of communication and
-            contact between the inhabitants. This was especially true after the
-            permanent settlement of the islands 5000 years BC. The islands of
-            the north Aegean were in such a position that shipping and trade
-            contributed greatly to the development of a significant culture. The
-            culture reaches its peak around 3000BC. The growth of settlements
-            such as Poliochnis in Lemnos, Emporiou in Chios and Iraiou in Samos,
-            amongst others, are evidence of the importance of these centers at
-            this time. By ca. 2000 BC the Ionians had installed themselves in
-            Chios while Samos and Lesvos are in the hands of the Achaeans. In
-            the late 12th and early 11th centuries BC, a time when vast numbers
-            of the people moved to Greece, the Aioleis arrived in Lesvos.
-          </p>
+          <ul class="read-more-wrap">
+            <li>
+              The North Aegean islands are a number of disconnected islands in
+              the north Aegean Sea, also known as the Northeast Aegean islands,
+              belonging to Greece and Turkey. The islands do not form a physical
+              chain or group, but are frequently grouped together for tourist or
+              administrative purposes. To the south are the Dodecanese islands;
+              and to the west are the Cyclades and Sporades islands. Within this
+              group, the main islands in the northeastern Aegean Sea and along
+              the Turkish coast are the Greek islands of Samos, Ikaria, Chios,
+              Lesbos, Lemnos, Agios Efstratios, Psara, Fournoi Korseon,
+              Oinousses and the Turkish islands of Imbros, Tenedos and the
+              Rabbit or Tavşan Islands. The main islands in the Thracian Sea in
+              the far north are the Greek islands of Samothrace and Thasos. From
+              the Mesolithic Age, the North Aegean, as indeed the entire Aegean,
+              ceased to be an obstacle and became a bridge joining the
+              inhabitants of the region. Shipping, trade, economy, culture and
+              social interactions developed in the archipelago and surrounding
+              areas on the basis of communication and contact between the
+              inhabitants. This was especially true after the permanent
+              settlement of the islands 5000 years BC. The islands of the north
+              Aegean were in such a position that shipping and trade contributed
+              greatly to the development of a significant culture.
+            </li>
+            <li class="read-more-target">
+              The culture reaches its peak around 3000BC. The growth of
+              settlements such as Poliochnis in Lemnos, Emporiou in Chios and
+              Iraiou in Samos, amongst others, are evidence of the importance of
+              these centers at this time. By ca. 2000 BC the Ionians had
+              installed themselves in Chios while Samos and Lesvos are in the
+              hands of the Achaeans. In the late 12th and early 11th centuries
+              BC, a time when vast numbers of the people moved to Greece, the
+              Aioleis arrived in Lesvos.
+            </li>
+          </ul>
+          <label for="post-8" class="read-more-trigger"></label>
         </div>
       </div>
     </div>
@@ -502,136 +568,477 @@
             <img src="pictures/gluka.jpg" alt="pastry" />
           </div>
         </div>
-        <div class="row">
-          <div id="culture" class="col-lg-6">
-            <img src="pictures/culture.png" alt="culture" />
-          </div>
-          <div class="col-4"></div>
-          <div class="col-5"></div>
-        </div>
-        <div id="text" class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Language</h2>
-            <h5>The First written language</h5>
-            <p>
-              The first written Greek letters were found on baked mud tablets,
-              in the remains of the Minoan Knossos Palace of Crete island. This
-              language is known as Linear A and it has not been fully decoded
-              till today. The most famous example of Linear A is written in the
-              famous Phaestos Disc. In the 12th century BC, a new language
-              started to develop, called Linear B, where each drawing symbol is
-              a consonant-vowel combination. Linear B dates from the Mycenaean
-              civilization. In the late 9th and early 8th century BC, the
-              language found was based on the Phoenician syllabary, written from
-              left to right and back again.
-            </p>
-            <img src="pictures/grammikib.png" alt="first language" />
-          </div>
-          <div class="col-lg-8">
-            <h5>The Classical Period</h5>
-            <p>
-              During the Classical period (6th-4th century BC), the territory of
-              Greece was divided in numerous states and each one had its own
-              dialect. The two more important dialects were the Ionic and the
-              Attic. During this period, Athens established itself as the
-              political, economical and cultural centre of the Greek world, and
-              therefore the Attic idiom started to be used as a common language.
-            </p>
-            <p>
-              After the expeditions of Alexander the Great, Attic dialect was
-              also expanded in the depths of the East and it was spoken by
-              millions of people. This gradually led to a mixing dialect which
-              was the beginning of the koine, or common dialect, mostly known as
-              the Hellenistic koine. This type of language survived through
-              centuries and became an official language of the Roman Empire
-              later on. The koine is the original language of the New Testament
-              and the basis for the development of Medieval and Modern Greek.
-              This language was developed all through the Byzantine times.
-            </p>
-            <img src="pictures/attikidial.png" alt="attiki dialektos" />
-          </div>
-          <div class="col-lg-8">
-            <h5>Katharevousa and Dimotiki</h5>
-            <p>
-              With the creation of the modern Greek State in 1829, the question
-              of the language, as an important part of the nation-building
-              process, had to be resolved. After about 4 centuries of Ottoman
-              occupation, Greece had mostly an oral culture due to all these
-              centuries of different dominations. The question was the choice of
-              language used in administration and education. One of the
-              suggestions, to re-use the Attic language, was very attractive,
-              especially because all the Western Europe was charmed by the
-              Ancient Greek culture, and it would have been a great stimulus for
-              the philhellenes. It proved impossible from a practical point of
-              view.
-            </p>
-            <p>
-              So, the Greek scholar Adamantios Korais (1748-1833), suggested to
-              reform the spoken language of those times on ancient principals.
-              This suggestion was accepted and the katharevoussa (meaning
-              purified language) was created. The theme became politicized: a
-              distinction rose between the katharevoussa, which became the
-              high-style language associated with official functions such as
-              governmental affairs, education and religion, and the dimotiki
-              language (popular language) used by common people in their
-              everyday life. Source: www.greeka.com
-            </p>
-            <img src="pictures/katharevousa.jpg" alt="katharevoussa" />
-          </div>
 
-          <div class="col-lg-8">
-            <h5>20th century language</h5>
-            <p>
-              n the 20th century, the Greek language debate took a huge
-              political significance: academics were sacked for using dimotiki,
-              riots were taking place in the streets and a lot of people were
-              claiming that katharevoussa was being used as an instrument of
-              denying access to education to the common people. Nationalist
-              governments like the dictator of the Junta, Ioannis Papadopoulos,
-              favoured katharevoussa. The struggle between the proponents of
-              dimotiki and katharevoussa riased various social attitudes and
-              political positions.
-            </p>
-            <p>
-              The theme was eventually solved in 1976, with actions of the after
-              dictatorship government. Dimotiki language was adopted in
-              education and administration and it has been kept since then as
-              the formal language of modern Greece. The last thing worth
-              mentioning is that most regions in Greece have their local oral
-              dialects, never used as writing means. Every region has of course
-              its local accent.
-            </p>
-            <img src="pictures/dimotiki.png" alt="dimotiki" />
+        <div class="wrapper">
+          <div id="culture-div" class="row">
+            <div class="col-lg-6">
+              <img id="culture" src="pictures/culture.png" alt="culture" />
+            </div>
+            <div class="col-4"></div>
+            <div class="col-5"></div>
           </div>
-          <div id="religion" class="col-lg-8">
-            <h2>Religion</h2>
-            <h5>Orthodoxy</h5>
-            <p>
-              The religion of Greek people is an important aspect of the Greek culture. The Greek population in mainland Greece and the Greek islands is Christian Orthodox per 98%. The religion of rest of the population is Muslims, Catholic and Jewish. Greece and Russia are the only countries to have such a great proportion of Orthodox population. The Orthodox Church forms the third largest branch of Christianity, after the Roman Catholics and the Protestants. You will find bellow information about the history of Orthodox religion in Greece. 
-            </p>
-            <img src="pictures/church.jpg" alt="orthodxy">
+          <button
+            id="language"
+            class="btn btn-default"
+            data-toggle="collapse"
+            data-target="#details1"
+          >
+            <img src="pictures/language-logo.png" alt="culture" />
+          </button>
+          <div id="details1" class="collapse row justify-content-center">
+            <div class="col-lg-8">
+              <h5>The First written language</h5>
+              <p>
+                The first written Greek letters were found on baked mud tablets,
+                in the remains of the Minoan Knossos Palace of Crete island.
+                This language is known as Linear A and it has not been fully
+                decoded till today. The most famous example of Linear A is
+                written in the famous Phaestos Disc. In the 12th century BC, a
+                new language started to develop, called Linear B, where each
+                drawing symbol is a consonant-vowel combination. Linear B dates
+                from the Mycenaean civilization. In the late 9th and early 8th
+                century BC, the language found was based on the Phoenician
+                syllabary, written from left to right and back again.
+              </p>
+              <img
+                id="imgcenter1"
+                src="pictures/grammikib.png"
+                alt="first language"
+              />
+            </div>
+            <div class="col-lg-8">
+              <h5>The Classical Period</h5>
+              <p>
+                During the Classical period (6th-4th century BC), the territory
+                of Greece was divided in numerous states and each one had its
+                own dialect. The two more important dialects were the Ionic and
+                the Attic. During this period, Athens established itself as the
+                political, economical and cultural centre of the Greek world,
+                and therefore the Attic idiom started to be used as a common
+                language.
+              </p>
+              <p>
+                After the expeditions of Alexander the Great, Attic dialect was
+                also expanded in the depths of the East and it was spoken by
+                millions of people. This gradually led to a mixing dialect which
+                was the beginning of the koine, or common dialect, mostly known
+                as the Hellenistic koine. This type of language survived through
+                centuries and became an official language of the Roman Empire
+                later on. The koine is the original language of the New
+                Testament and the basis for the development of Medieval and
+                Modern Greek. This language was developed all through the
+                Byzantine times.
+              </p>
+              <img
+                id="imgcenter2"
+                src="pictures/attikidial.png"
+                alt="attiki dialektos"
+              />
+            </div>
+            <div class="col-lg-8">
+              <h5>Katharevousa and Dimotiki</h5>
+              <p>
+                With the creation of the modern Greek State in 1829, the
+                question of the language, as an important part of the
+                nation-building process, had to be resolved. After about 4
+                centuries of Ottoman occupation, Greece had mostly an oral
+                culture due to all these centuries of different dominations. The
+                question was the choice of language used in administration and
+                education. One of the suggestions, to re-use the Attic language,
+                was very attractive, especially because all the Western Europe
+                was charmed by the Ancient Greek culture, and it would have been
+                a great stimulus for the philhellenes. It proved impossible from
+                a practical point of view.
+              </p>
+              <p>
+                So, the Greek scholar Adamantios Korais (1748-1833), suggested
+                to reform the spoken language of those times on ancient
+                principals. This suggestion was accepted and the katharevoussa
+                (meaning purified language) was created. The theme became
+                politicized: a distinction rose between the katharevoussa, which
+                became the high-style language associated with official
+                functions such as governmental affairs, education and religion,
+                and the dimotiki language (popular language) used by common
+                people in their everyday life. Source: www.greeka.com
+              </p>
+              <img
+                id="imgcenter3"
+                src="pictures/katharevousa.jpg"
+                alt="katharevoussa"
+              />
+            </div>
+            <div class="col-lg-8">
+              <h5>20th century language</h5>
+              <p>
+                In the 20th century, the Greek language debate took a huge
+                political significance: academics were sacked for using
+                dimotiki, riots were taking place in the streets and a lot of
+                people were claiming that katharevoussa was being used as an
+                instrument of denying access to education to the common people.
+                Nationalist governments like the dictator of the Junta, Ioannis
+                Papadopoulos, favoured katharevoussa. The struggle between the
+                proponents of dimotiki and katharevoussa riased various social
+                attitudes and political positions.
+              </p>
+              <p>
+                The theme was eventually solved in 1976, with actions of the
+                after dictatorship government. Dimotiki language was adopted in
+                education and administration and it has been kept since then as
+                the formal language of modern Greece. The last thing worth
+                mentioning is that most regions in Greece have their local oral
+                dialects, never used as writing means. Every region has of
+                course its local accent.
+              </p>
+              <img id="imgcenter4" src="pictures/dimotiki.png" alt="dimotiki" />
+            </div>
           </div>
-          <div  id="religion1" class="col-lg-8">
-            <h5>The founders </h5>
-            <p>
-              According to the history of Orthodoxy, the first who came in the Greek territory to preach Christianity was Saint Paul in 49 AD. Although many people converted to Christianity in the centuries that followed, this didn't become an official religion until the Emperor Constantine the Great established Christianity as the official religion of the Byzantine Empire. 
-            </p>
+          <button
+            id="religion-button"
+            class="btn btn-default"
+            data-toggle="collapse"
+            data-target="#details2"
+          >
+            <img src="pictures/Religion-logo.png" alt="culture" />
+          </button>
+          <div id="details2" class="collapse row justify-content-center">
+            <div id="religion" class="col-lg-8">
+              <h5>Orthodoxy</h5>
+              <p>
+                The religion of Greek people is an important aspect of the Greek
+                culture. The Greek population in mainland Greece and the Greek
+                islands is Christian Orthodox per 98%. The religion of rest of
+                the population is Muslims, Catholic and Jewish. Greece and
+                Russia are the only countries to have such a great proportion of
+                Orthodox population. The Orthodox Church forms the third largest
+                branch of Christianity, after the Roman Catholics and the
+                Protestants. You will find bellow information about the history
+                of Orthodox religion in Greece.
+              </p>
+              <img src="pictures/church.jpg" alt="orthodxy" />
+            </div>
+            <div id="religion1" class="col-lg-8">
+              <h5>The founders</h5>
+              <p>
+                According to the history of Orthodoxy, the first who came in the
+                Greek territory to preach Christianity was Saint Paul in 49 AD.
+                Although many people converted to Christianity in the centuries
+                that followed, this didn't become an official religion until the
+                Emperor Constantine the Great established Christianity as the
+                official religion of the Byzantine Empire.
+              </p>
+            </div>
+            <div id="religion2" class="col-lg-8">
+              <h5>The Schism</h5>
+              <p>
+                In 1054 AD, Christianity was divided in Eastern and Western
+                Church, the Orthodox and the Catholics. This division was called
+                "The Schism" and was the result of long disputes between the
+                Pope of Rome and the Patriarch of Constantinople. The disputes
+                referred to the celibacy of the clergy (Catholic priests had to
+                remain unmarried, whereas the orthodox priests could marry
+                before becoming ordained), receiving the Holy Communion and the
+                wording of the Creed: for the Orthodox the Holy Spirit proceeds
+                from the Father, whereas Rome added and the Son (filioque).
+                However, the largest problem between the two Churches was the
+                demand of the Pope to have full control over the Eastern
+                Patriarchs (of Constantinople, of Alexandreia and of Antioche).
+              </p>
+            </div>
+            <div id="religion3" class="col-lg-8">
+              <h5>Other religions in Greece</h5>
+              <p>
+                As mentioned, 98% of the Greek population is Christian Orthodox.
+                A percentage of 1,3% are Greek citizens of Muslim religion,
+                mostly people living in Thrace who were not affected by the
+                population exchange of 1922 between the Greeks of Asia Minor and
+                the Turks of Greece. The rest 0,7% are Catholics, Jewish,
+                Jehovah's Witnesses and others. Most Catholics live on the
+                island of Syros, a remain from the Venetian occupation of
+                Cyclades in the Medieval times.
+              </p>
+            </div>
           </div>
-          <div  id="religion2" class="col-lg-8">
-            <h5>The Schism</h5>
-            <p>
-              In 1054 AD, Christianity was divided in Eastern and Western Church, the Orthodox and the Catholics. This division was called "The Schism" and was the result of long disputes between the Pope of Rome and the Patriarch of Constantinople. The disputes referred to the celibacy of the clergy (Catholic priests had to remain unmarried, whereas the orthodox priests could marry before becoming ordained), receiving the Holy Communion and the wording of the Creed: for the Orthodox the Holy Spirit proceeds from the Father, whereas Rome added and the Son (filioque). However, the largest problem between the two Churches was the demand of the Pope to have full control over the Eastern Patriarchs (of Constantinople, of Alexandreia and of Antioche).
-            </p>
+          <button
+            class="btn btn-default"
+            data-toggle="collapse"
+            data-target="#details3"
+          >
+            <img src="pictures/music-logo.png" alt="culture" />
+          </button>
+          <div id="details3" class="collapse row justify-content-center">
+            <div id="music" class="col-lg-8">
+              <p>
+                Music in Greece is of unbelievable diversity due to the creative
+                Greek assimilation of different influences of the Eastern and
+                Western cultures of Asia and Europe. Music is an important
+                aspect of the daily Greek culture. It has a long history dating
+                from the Antiquity, during which poetry, dancing and music were
+                inseparable and played an important part in the ancient Greek's
+                everyday life. The Greek tragedy used music as one of its
+                component elements. Then, with the fall of Ancient Greece and
+                the evolution of the Byzantine Empire, Greece music got a more
+                ecclesiastical approach. In the 400 years of Ottoman domination,
+                it was influenced by the eastern sounds. It got reborn only in
+                the 19th century with the opera compositions of Nikolaos
+                Mantzaros (1795-1872) and Spyros Samaras (1861-1917). From that
+                moment on, Greece produced many talented artists, including
+                great composers to fabulous interprets. Music in Greece became
+                an expression and a testimony of the slavery years, a weapon of
+                opposition against the colonel authority and a way to express
+                love, death, human fears, that accompanied the Greeks in their
+                everyday life.
+              </p>
+              <img
+                class="imgcenter"
+                src="pictures/rebetiko.jpg"
+                alt="rebetiko"
+              />
+            </div>
+            <div id="music1" class="col-lg-8">
+              <h2>Music Types</h2>
+              <h5>Folk Songs</h5>
+              <p>
+                Greek folk song sees its origins coming from the time of ancient
+                Greek poetry and music. It can be divided into two musical
+                movements: the akritic and the klephtic. The akritic style dates
+                from the 9th century AD and it was created to express the life
+                and struggles of the frontier guards of the Byzantine Empire,
+                the "akrites". The klephtic style was born between the end of
+                the Byzantine period and the beginning of the Greek Revolution
+                that led to the Greek Independence in 1821. This style was
+                created by the "kleftes", the heroes who left to live in the
+                mountains, leading a revolutionary action against the Ottoman
+                tyranny. The klephtic musical style is monophonic, with second
+                voices repeating a given rhythmical formula, without any
+                harmonic accompaniment. It is composed by love songs, wedding
+                songs, songs of exile, songs of freedom, death and sorrows. It
+                expresses an important, bloody part of the history and the life
+                of the akrites.
+              </p>
+              <p>
+                Musical instruments used in Greek folk songs are the lira and
+                laouto (lute), the tambouras and gaida (bagpipe), the zournas
+                (shawm), the daouli (drum), the dachares (tambourine), the ziyia
+                (paired groups) and the violi (violin).
+              </p>
+            </div>
+            <div id="music2" class="col-lg-8">
+              <h5>Kantada</h5>
+              <p>
+                Originated from Kefalonia island and created at the beginning of
+                the 19th century, it is a style of romantic serenade music, sung
+                with three male voices in chorus, accompanied by guitar or
+                mandolin. This style had been influenced by the Italian music
+                and soon gained all the Ionian Islands and the rest of Greece.
+                In Athens, the cantadha is a little different, accompanied with
+                a compania composed of violin, clarinet and laouto.
+              </p>
+            </div>
+            <div id="music3" class="col-lg-8">
+              <h5>Nisiotika</h5>
+              <p>
+                This kind of popular songs was born in the Greek islands. Every
+                island has its own nissiotiko style and its own way of dancing
+                it. Violin, lira, clarinet and guitar accompany the high-pitched
+                women voices or the low voice of a single man. Nissiotika are
+                still easy to listen in every festival on any Greek island,
+                during which a huge group of musicians play life music during
+                the whole night.
+              </p>
+            </div>
+            <div id="music4" class="col-lg-8">
+              <h5>Rebetiko</h5>
+              <p>
+                This particular and famous style of music in Greece was born in
+                the hashish dens and the tekedes, the Turkish style underground
+                cafes of the district of Piraeus and the city of Thessaloniki.
+                Rembetiko music was spread by the two million Greek refugees
+                coming from Asia Minor in 1922, after the destruction of Smyrne
+                by the Turks. Homesick and rejected by the Greek population,
+                those Greeks who had never lived in Greece and who had lost
+                everything, sang about their surroundings, poverty, pain,
+                hunger, prison, police oppression, drug addiction, betrayal and
+                hashish. Rembetiko was the forbidden music of the outcast, the
+                Greek urban blues.
+              </p>
+              <p>
+                The rembetiko slowly in the 1950s came out of the underground
+                world and started to be played in the nightclubs of Athens, were
+                it became very popular, even if it was despised by the Greek
+                people because they saw it as an outcast music. The principal
+                instruments of the rembetiko are the bouzouki, an eight string
+                oval-shape instrument, the baglama, which looks like a miniature
+                bouzouki, and the guitar as well as, for accompaniment, the
+                ziyia and the ntefi, a leather small tambourine with little
+                metallic plates circling it.
+              </p>
+              <p>
+                Some of the greatest and most famous players and singers are
+                Vassilis Tsitsanis, Markos Vamvakaris, Marika Ninou and Sotiria
+                Bellou. During the 1960s, the rembetiko became unpopular again.
+                Young people preferred the new rock music coming from the West
+                and the oldest one started listening again to the candhades of
+                the 1920s. But this music styles is back in the trends and many
+                taverns propose rebetika music bands during week-ends.
+              </p>
+            </div>
           </div>
-
-          <div id="religion3" class="col-lg-8">
-            <h5>Other religions in Greece</h5>
-            <p>
-              As mentioned, 98% of the Greek population is Christian Orthodox. A percentage of 1,3% are Greek citizens of Muslim religion, mostly people living in Thrace who were not affected by the population exchange of 1922 between the Greeks of Asia Minor and the Turks of Greece. The rest 0,7% are Catholics, Jewish, Jehovah's Witnesses and others. Most Catholics live on the island of Syros, a remain from the Venetian occupation of Cyclades in the Medieval times. Source: www.greeka.com
-            </p>
-            
+          <button
+            class="btn btn-default"
+            data-toggle="collapse"
+            data-target="#details4"
+          >
+            <img src="pictures/theater-logo.png" alt="culture" />
+          </button>
+          <div id="details4" class="collapse row justify-content-center">
+            <div id="theater" class="col-lg-8">
+              <img id="theaterimg" src="pictures/epidaurus.jpg" alt="theater" />
+              <h5>Origins of Theater</h5>
+              <p>
+                The origins of Greek theatre lie in the revels of the followers
+                of Dionysus, a god of fertility and wine. In keeping with the
+                god's special interests, his cult ceremonies are exciting
+                occasions. His female devotees, in particular, dance themselves
+                into a state of frenzy. Carrying long phallic symbols, known as
+                thyrsoi, they tear to pieces and devour the raw flesh of
+                sacrificial animals. But the Dionysians also develop a more
+                structured form of drama. They dance and sing, in choral form,
+                the stories of Greek myth.
+              </p>
+              <p>
+                In the 6th century BC a priest of Dionysus, by the name of
+                Thespis, introduces a new element which can validly be seen as
+                the birth of theatre. He engages in a dialogue with the chorus.
+                He becomes, in effect, the first actor. Actors in the west, ever
+                since, have been proud to call themselves Thespians. According
+                to a Greek chronicle of the 3rd century BC, Thespis is also the
+                first winner of a theatrical award. He takes the prize in the
+                first competition for tragedy, held in Athens in 534 BC.
+                Theatrical contests become a regular feature of the annual
+                festival in honour of Dionysus, held over four days each spring
+                and known as the City Dionysia. Four authors are chosen to
+                compete. Each must write three tragedies and one satyr play (a
+                lascivious farce, featuring the sexually rampant satyrs,
+                half-man and half-animal, who form the retinue of Dionysus)
+              </p>
+              <p>
+                The performance of the plays by each author takes a full day, in
+                front of a large number of citizens in holiday mood, seated on
+                the slope of an Athenian hillside. The main feature of the stage
+                is a circular space on which the chorus dance and sing. Behind
+                it a temporary wooden structure makes possible a suggestion of
+                scenery. At the end of the festival a winner is chosen.
+              </p>
+            </div>
+            <div id="theater1" class="col-lg-8">
+              <h5>The Greek tragedians: 5th century BC</h5>
+              <p>
+                Only a small number of tragedies survive as full texts from the
+                annual competitions in Athens, but they include work by three
+                dramatists of genius. The earliest is the heavyweight of the
+                trio,Aeschylus. Aeschylus adds a second actor, increasing the
+                potential for drama. He first wins the prize for tragedy in 484
+                BC. He is known to have written about eighty plays, of which
+                only seven survive. One of his innovations is to write the day's
+                three tragedies on a single theme, as a trilogy. By good fortune
+                three of his seven plays are one such trilogy, which remains one
+                of the theatre's great masterpieces - the Oresteia, celebrating
+                the achievement of Athens in replacing the chaos of earlier
+                times with the rule of law. Sophocles gains his first victory in
+                468 BC, defeating Aeschylus. He is credited with adding a third
+                actor, further extending the dramatic possibilities of a scene.
+                Whereas Aeschylus tends to deal with great public themes, the
+                tragic dilemmas in Sophocles are worked out at a more personal
+                level. Plots become more complex, characterization more subtle,
+                and the personal interaction between characters more central to
+                the drama.
+              </p>
+              <p>
+                Although Sophocles in a very long life writes more plays than
+                Aeschylus (perhaps about 120), again only seven survive intact.
+                Of these Oedipus the King is generally considered to be his
+                masterpiece. The youngest of the three great Greek tragedians is
+                Euripides. More of his plays survive (19 as opposed to 7 for
+                each of the others), but he has fewer victories than his rivals
+                in the City Dionysia - in which he first competes in 454 BC.
+                Euripides introduces a more unconventional view of Greek myth,
+                seeing it from new angles or viewing mythological characters in
+                terms of their human frailties. His vision is extremely
+                influential in later schools of tragic drama. Racine, for
+                example, derives Andromaque and Phèdre from the Andromache and
+                Hippolytus of Euripides.
+              </p>
+            </div>
+            <div id="theater2" class="col-lg-8">
+              <h5>The beginning of Greek comedy: 5th century BC</h5>
+              <p>
+                From 486 BC there is an annual competitition for comedies at
+                Athens - held as part of the Lenaea, a three-day festival in
+                January. Only one comic author's work has survived from the 5th
+                century. Like the first three tragedians, he launches the genre
+                with great brilliance. He is Aristophanes, a frequent winner of
+                the first prize in the Lenaea (on the first occasion, in 425 BC,
+                with the Acharnians). Eleven of his plays survive, out of a
+                total of perhaps forty spanning approximately the period 425-390
+                BC. They rely mainly on a device which becomes central to the
+                tradition of comedy. They satirize contemporary foibles by
+                placing them in an unexpected context, whether by means of a
+                fantastic plot or through the antics of ridiculous characters.
+              </p>
+              <p>
+                A good example is The Frogs, a literary satire at the expense of
+                Euripides. After the death of the great man, Dionysus goes down
+                to Hades to bring back his favourite tragedian. A competition
+                held down there enables Aristophanes to parody the style of
+                Euripides. As a result Dionysus comes back to earth with
+                Aeschylus instead. In The Wasps the Athenian love of litigation
+                is ridiculed in the form of an old man who sets up a law court
+                in his home, to try his dog for stealing cheese. In Lysistrata
+                the horrors of war are discussed in a circumstance of extreme
+                social crisis; the women of Greece refuse to make love until
+                their men agree to make peace.
+              </p>
+            </div>
+            <div id="theater3" class="col-lg-8">
+              <h5>The Greek theatre: 4th century BC</h5>
+              <p>
+                An exclusively Greek contribution to architectural history is
+                the raked auditorium for watching theatrical performances
+                (appropriately, since the Greeks are also the inventors of
+                theatre as a literary form). The masterpieces of Greek drama
+                date from the 5th century BC. At that time, in Athens, the
+                audience sit on the bare hillside to watch performances on a
+                temporary wooden stage. In the 4th century a stone auditorium is
+                built on the site, and there is still a theatre there today -
+                the theatre of Dionysus. However this is a Roman reconstruction
+                from the time of Nero. By then the shape of the stage is a
+                semi-circle.
+              </p>
+              <p>
+                In the first Greek theatres the stage is a full circle, in
+                keeping with the circular dance - the choros - from which the
+                theatrical performance has evolved. This stage is called the
+                orchestra (orchester, a dancer), because it is the place where
+                the chorus sing and dance. Epidaurus, built in about 340 BC,
+                provides the best example of a classical Greek theatre. In the
+                centre of the orchestra is the stone base on which an altar
+                stood, reflecting the religious aspect of theatre in Greece. The
+                rising tiers of seats, separated by aisles, provide the pattern
+                for the closest part of the auditorium to the stage in nearly
+                all subsequent theatres - where these seats are still sometimes
+                called the orchestra stalls.
+              </p>
+            </div>
           </div>
         </div>
-      
+        <div class="wrapper1">
+          <div id="past" class="row justify-content-center">
+            <div id="img-text-hover">
+              <a href="past.html"><h2>Past</h2></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
